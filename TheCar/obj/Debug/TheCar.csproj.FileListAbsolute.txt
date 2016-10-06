@@ -36,3 +36,6 @@ C:\Users\Kato\Desktop\TheCar - Kato\TheCar\bin\Debug\Microsoft.Practices.Service
 C:\Users\Kato\Desktop\TheCar - Kato\TheCar\bin\Debug\Microsoft.Practices.Unity.xml
 C:\Users\Kato\Desktop\TheCar - Kato\TheCar\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
 C:\Users\Kato\Desktop\TheCar - Kato\TheCar\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
+C:\Users\Kato\Desktop\TheCar - Kato\TheCarExercise\TheCar\bin\Debug\TheCar.exe.config
+C:\Users\Kato\Desktop\TheCar - Kato\TheCarExercise\TheCar\obj\Debug\TheCar.exe
+C:\Users\Kato\Desktop\TheCar - Kato\TheCarExercise\TheCar\obj\Debug\TheCar.pdb
