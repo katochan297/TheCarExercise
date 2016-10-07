@@ -1,10 +1,4 @@
-C:\Users\Kato\Desktop\TheCar\TheCar.Data\bin\Debug\TheCar.Data.dll
-C:\Users\Kato\Desktop\TheCar\TheCar.Data\bin\Debug\TheCar.Data.pdb
-C:\Users\Kato\Desktop\TheCar\TheCar.Data\obj\Debug\TheCar.Data.dll
-C:\Users\Kato\Desktop\TheCar\TheCar.Data\obj\Debug\TheCar.Data.pdb
-C:\Users\Kato\Desktop\TheCar\TheCar.Data\obj\Debug\TheCar.Data.csprojResolveAssemblyReference.cache
-C:\Users\Kato\Desktop\TheCar - Kato\TheCar\TheCar.Data\bin\Debug\TheCar.Data.dll
-C:\Users\Kato\Desktop\TheCar - Kato\TheCar\TheCar.Data\bin\Debug\TheCar.Data.pdb
-C:\Users\Kato\Desktop\TheCar - Kato\TheCar\TheCar.Data\obj\Debug\TheCar.Data.csprojResolveAssemblyReference.cache
-C:\Users\Kato\Desktop\TheCar - Kato\TheCar\TheCar.Data\obj\Debug\TheCar.Data.dll
-C:\Users\Kato\Desktop\TheCar - Kato\TheCar\TheCar.Data\obj\Debug\TheCar.Data.pdb
+C:\1 - Personal\TheCar\TheCar.Data\bin\Debug\TheCar.Data.dll
+C:\1 - Personal\TheCar\TheCar.Data\bin\Debug\TheCar.Data.pdb
+C:\1 - Personal\TheCar\TheCar.Data\obj\Debug\TheCar.Data.dll
+C:\1 - Personal\TheCar\TheCar.Data\obj\Debug\TheCar.Data.pdb

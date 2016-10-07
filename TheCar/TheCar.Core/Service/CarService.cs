@@ -13,9 +13,9 @@ namespace TheCar.Core.Service
     {
         private readonly ITaxRateProvide _taxProvider;
 
-        public CarService(ITaxRateProvide taxRate)
+        public CarService()
         {
-            _taxProvider = taxRate;
+            _taxProvider = new TaxRateProvider();
         }
 
         private float CaculateImportTaxPrice(Car car)
@@ -24,14 +24,15 @@ namespace TheCar.Core.Service
         }
 
 
-        public float CaculateEndUserPriceUSD(Car car)
+        public float CaculateEndUserPrice_USD(Car car)
         {
-            return (car.OriginalPrice + CaculateImportTaxPrice(car)) * (1 + CountryVAT.Philippines); //end_user_price = Original Price + Import Tax Price + VAT (VAT = (Original Price + Import Tax Price) * 12% )
+            //end_user_price = Original Price + Import Tax Price + VAT (VAT = (Original Price + Import Tax Price) * 12% )
+            return (car.OriginalPrice + CaculateImportTaxPrice(car)) * (1 + CountryVAT.Philippines); 
         }
 
-        public float CaculateEndUserPricePesos(Car car)
+        public float CaculateEndUserPrice_Pesos(Car car)
         {
-            return CaculateEndUserPriceUSD(car) * ExchangeRate.PesosRate;
+            return CaculateEndUserPrice_USD(car) * ExchangeRate.PesosRate;
         }
 
 

@@ -7,7 +7,7 @@ using TheCar.Data;
 
 namespace TheCar.Core.Provider
 {
-    public interface ITaxRateProvide
+    internal interface ITaxRateProvide
     {
         float CaculateImportTax(Car car);
 

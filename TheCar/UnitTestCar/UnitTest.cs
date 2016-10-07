@@ -1,5 +1,4 @@
 ﻿using System;
-using Microsoft.Practices.Unity;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TheCar.Core.Helper;
 using TheCar.Core.Provider;
@@ -12,18 +11,6 @@ namespace UnitTestCar
     [TestClass]
     public class UnitTest
     {
-        private readonly UnityContainer _container = new UnityContainer();
-
-        private void RegisterType()
-        {
-            _container.RegisterType<ITaxRateProvide, TaxRateProvider>();
-            _container.RegisterType<CarService, CarService>();
-        }
-
-        public UnitTest()
-        {
-            RegisterType();
-        }
 
         [TestMethod]
         public void Test_Benz_G65_Car()
@@ -35,10 +22,10 @@ namespace UnitTestCar
                 OriginalPrice = 217900f,
                 OriginalRegion = Region.Europe
             };
-            var svc = _container.Resolve<CarService>();
+            var svc = new CarService();
 
-            Assert.AreEqual(732144f, svc.CaculateEndUserPriceUSD(car));
-            Assert.AreEqual(34410768f, svc.CaculateEndUserPricePesos(car));
+            Assert.AreEqual(732144f, svc.CaculateEndUserPrice_USD(car));
+            Assert.AreEqual(34410768f, svc.CaculateEndUserPrice_Pesos(car));
         }
 
         [TestMethod]
@@ -51,10 +38,10 @@ namespace UnitTestCar
                 OriginalPrice = 19490f,
                 OriginalRegion = Region.Japan
             };
-            var svc = _container.Resolve<CarService>();
+            var svc = new CarService();
 
-            Assert.AreEqual(37108.96f, svc.CaculateEndUserPriceUSD(car));
-            Assert.AreEqual(1744121.12f, svc.CaculateEndUserPricePesos(car));
+            Assert.AreEqual(37108.96f, svc.CaculateEndUserPrice_USD(car));
+            Assert.AreEqual(1744121.12f, svc.CaculateEndUserPrice_Pesos(car));
         }
 
         [TestMethod]
@@ -67,10 +54,10 @@ namespace UnitTestCar
                 OriginalPrice = 36995f,
                 OriginalRegion = Region.USA
             };
-            var svc = _container.Resolve<CarService>();
+            var svc = new CarService();
 
-            Assert.AreEqual(78725.36f, svc.CaculateEndUserPriceUSD(car));
-            Assert.AreEqual(3700091.92f, svc.CaculateEndUserPricePesos(car));
+            Assert.AreEqual(78725.36f, svc.CaculateEndUserPrice_USD(car));
+            Assert.AreEqual(3700091.92f, svc.CaculateEndUserPrice_Pesos(car));
         }
 
         [TestMethod]
@@ -83,10 +70,10 @@ namespace UnitTestCar
                 OriginalPrice = 6000f,
                 OriginalRegion = Region.Other
             };
-            var svc = _container.Resolve<CarService>();
+            var svc = new CarService();
 
-            Assert.AreEqual(6720f, svc.CaculateEndUserPriceUSD(car));
-            Assert.AreEqual(315840f, svc.CaculateEndUserPricePesos(car));
+            Assert.AreEqual(6720f, svc.CaculateEndUserPrice_USD(car));
+            Assert.AreEqual(315840f, svc.CaculateEndUserPrice_Pesos(car));
         }
 
 
