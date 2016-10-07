@@ -13,3 +13,4 @@ C:\Users\Kato\Desktop\TheCar - Kato\TheCarExercise\TheCar\TheCar\obj\Debug\TheCa
 C:\Users\Kato\Desktop\TheCar - Kato\TheCarExercise\TheCar\TheCar\obj\Debug\TheCar.pdb
 C:\Users\Kato\Desktop\TheCar - Kato\TheCarExercise\TheCar\TheCar\bin\Debug\TheCar.exe
 C:\Users\Kato\Desktop\TheCar - Kato\TheCarExercise\TheCar\TheCar\bin\Debug\TheCar.pdb
+C:\Users\Kato\Desktop\TheCar - Kato\TheCarExercise\TheCar\TheCar\obj\Debug\TheCar.csprojResolveAssemblyReference.cache
