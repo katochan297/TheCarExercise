@@ -43,21 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Car.cs" />
+    <Compile Include="Enum\Enum.cs" />
+    <Compile Include="Helper\Utilities.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Provider\TaxRate.cs" />
+    <Compile Include="Provider\TaxRateProvider.cs" />
+    <Compile Include="Service\CarService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\TheCar.Core\TheCar.Core.csproj">
-      <Project>{d0b3417b-b75b-40b8-b80c-b55186809fb9}</Project>
-      <Name>TheCar.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\TheCar.Data\TheCar.Data.csproj">
-      <Project>{1aad6b90-5918-421d-be0d-1ca894cddeeb}</Project>
-      <Name>TheCar.Data</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

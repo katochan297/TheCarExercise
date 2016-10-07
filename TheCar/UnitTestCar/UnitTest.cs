@@ -1,10 +1,9 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using TheCar.Core.Helper;
-using TheCar.Core.Provider;
-using TheCar.Core.Service;
-using TheCar.Data;
-using TheCar.Data.Enum;
+using TheCar;
+using TheCar.Enum;
+using TheCar.Service;
+
 
 namespace UnitTestCar
 {

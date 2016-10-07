@@ -12,10 +12,8 @@ C:\1 - Personal\TheCar\UnitTestCar\obj\Debug\UnitTestCar.pdb
 C:\Users\Kato\Desktop\TheCar - Kato\TheCarExercise\TheCar\UnitTestCar\bin\Debug\UnitTestCar.dll
 C:\Users\Kato\Desktop\TheCar - Kato\TheCarExercise\TheCar\UnitTestCar\bin\Debug\UnitTestCar.pdb
 C:\Users\Kato\Desktop\TheCar - Kato\TheCarExercise\TheCar\UnitTestCar\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
-C:\Users\Kato\Desktop\TheCar - Kato\TheCarExercise\TheCar\UnitTestCar\bin\Debug\TheCar.Core.dll
-C:\Users\Kato\Desktop\TheCar - Kato\TheCarExercise\TheCar\UnitTestCar\bin\Debug\TheCar.Data.dll
-C:\Users\Kato\Desktop\TheCar - Kato\TheCarExercise\TheCar\UnitTestCar\bin\Debug\TheCar.Core.pdb
-C:\Users\Kato\Desktop\TheCar - Kato\TheCarExercise\TheCar\UnitTestCar\bin\Debug\TheCar.Data.pdb
 C:\Users\Kato\Desktop\TheCar - Kato\TheCarExercise\TheCar\UnitTestCar\obj\Debug\UnitTestCar.csprojResolveAssemblyReference.cache
 C:\Users\Kato\Desktop\TheCar - Kato\TheCarExercise\TheCar\UnitTestCar\obj\Debug\UnitTestCar.dll
 C:\Users\Kato\Desktop\TheCar - Kato\TheCarExercise\TheCar\UnitTestCar\obj\Debug\UnitTestCar.pdb
+C:\Users\Kato\Desktop\TheCar - Kato\TheCarExercise\TheCar\UnitTestCar\bin\Debug\TheCar.exe
+C:\Users\Kato\Desktop\TheCar - Kato\TheCarExercise\TheCar\UnitTestCar\bin\Debug\TheCar.pdb

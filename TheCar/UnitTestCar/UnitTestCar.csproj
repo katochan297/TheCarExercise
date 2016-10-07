@@ -54,13 +54,9 @@
     <Compile Include="UnitTest.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TheCar.Core\TheCar.Core.csproj">
-      <Project>{d0b3417b-b75b-40b8-b80c-b55186809fb9}</Project>
-      <Name>TheCar.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\TheCar.Data\TheCar.Data.csproj">
-      <Project>{1aad6b90-5918-421d-be0d-1ca894cddeeb}</Project>
-      <Name>TheCar.Data</Name>
+    <ProjectReference Include="..\TheCar\TheCar.csproj">
+      <Project>{95da7024-63a8-479d-977b-50a97ae07746}</Project>
+      <Name>TheCar</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

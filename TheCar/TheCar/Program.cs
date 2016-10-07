@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TheCar.Core.Helper;
-using TheCar.Core.Service;
-using TheCar.Data;
-using TheCar.Data.Enum;
+using TheCar.Enum;
+using TheCar.Helper;
+using TheCar.Service;
 
 namespace TheCar
 {
