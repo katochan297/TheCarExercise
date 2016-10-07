@@ -11,7 +11,14 @@ namespace TheCar.Enum
         Europe = 1,
         USA = 2,
         Japan = 3,
-        Other = 4
+        Other = 0
+    }
+
+    public enum LiterType
+    {
+        Low = 0,
+        Medium = 1,
+        High = 2
     }
 
     public class CountryVAT

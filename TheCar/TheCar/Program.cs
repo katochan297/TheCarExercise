@@ -19,7 +19,7 @@ namespace TheCar
                 CarName = "Benz G65",
                 Liter = 6.0f,
                 OriginalPrice = 217900f,
-                OriginalRegion = Region.Europe
+                OriginalRegion = Region.Other
             };
             var svc = new CarService();
             var priceUSD = Utilities.FormatWithCurrency(svc.CaculateEndUserPrice_USD(car).ToString());

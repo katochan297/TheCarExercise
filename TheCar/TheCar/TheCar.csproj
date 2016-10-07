@@ -49,7 +49,6 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\CarService.cs" />
-    <Compile Include="Service\TaxRate.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

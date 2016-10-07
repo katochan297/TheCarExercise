@@ -7,66 +7,66 @@ using TheCar.Enum;
 
 namespace TheCar.Service
 {
+
+    internal class LiterCategory
+    {
+        internal float Min;
+        internal float Max;
+        internal LiterType Type;
+
+        internal LiterType GetLiterType()
+        {
+            return Type;
+        }
+
+        internal bool IsLiterRight(Car car)
+        {
+            return car.Liter > Min && car.Liter <= Max && car.Liter >= 0;
+        }
+    }
+
+
     public class CarService
     {
-        private static Dictionary<Region, List<TaxRate>> _dicTaxRate;
+        private readonly float[,] _taxRateTable =
+        {
+            {0, 0, 0},
+            {1.0f, 1.2f, 2.0f},
+            {0.75f, 0.9f, 1.5f},
+            {0.7f, 0.8f, 1.35f}
+        };
+        
+        private readonly List<LiterCategory> _listLiterType;
 
         public CarService()
         {
-            _dicTaxRate = new Dictionary<Region, List<TaxRate>>()
+            _listLiterType = new List<LiterCategory>
             {
-                {
-                    Region.Europe, new List<TaxRate>
-                    {
-                        new TaxRate {Min = -1, Max = 2.0f, Rate = 100},
-                        new TaxRate {Min = 2.0f, Max = 5.0f, Rate = 120},
-                        new TaxRate {Min = 5.0f, Max = 1000.0f, Rate = 200}
-                    }
-                },
-                {
-                    Region.USA, new List<TaxRate>
-                    {
-                        new TaxRate {Min = -1, Max = 2.0f, Rate = 75},
-                        new TaxRate {Min = 2.0f, Max = 5.0f, Rate = 90},
-                        new TaxRate {Min = 5.0f, Max = 1000.0f, Rate = 150}
-                    }
-                },
-                {
-                    Region.Japan, new List<TaxRate>
-                    {
-                        new TaxRate {Min = -1, Max = 2.0f, Rate = 70},
-                        new TaxRate {Min = 2.0f, Max = 5.0f, Rate = 80},
-                        new TaxRate {Min = 5.0f, Max = 1000.0f, Rate = 135}
-                    }
-                },
-                {
-                    Region.Other, new List<TaxRate>
-                    {
-                        new TaxRate {Min = -1, Max = 1000.0f, Rate = 0}
-                    }
-                }
+                new LiterCategory {Min = -1, Max = 2.0f, Type = LiterType.Low},
+                new LiterCategory {Min = 2.0f, Max = 5.0f, Type = LiterType.Medium},
+                new LiterCategory {Min = 5.0f, Max = 1000.0f, Type = LiterType.High}
             };
         }
 
         private float GetTaxRate(Car car)
         {
-            if (_dicTaxRate.ContainsKey(car.OriginalRegion))
+            var firstOrDefault = _listLiterType.FirstOrDefault(x => x.IsLiterRight(car));
+            if (firstOrDefault != null)
             {
-                TaxRate taxRate =
-                    _dicTaxRate[car.OriginalRegion].FirstOrDefault(i => car.Liter > i.Min && car.Liter <= i.Max && car.Liter >= 0);
-
+                var carLiterType =  firstOrDefault.GetLiterType();
+                var rate = 0f;
                 try
                 {
-                    return taxRate.GetRate();
+                    rate = _taxRateTable[(int)car.OriginalRegion, (int)carLiterType];
                 }
-                catch (NullReferenceException)
+                catch (IndexOutOfRangeException)
                 {
                     //write log
                     throw;
                 }
-
+                return rate;
             }
-
+            
             return 0;
         }
 
@@ -79,7 +79,8 @@ namespace TheCar.Service
 
         public float CaculateEndUserPrice_USD(Car car)
         {
-            //end_user_price = Original Price + Import Tax Price + VAT (VAT = (Original Price + Import Tax Price) * 12% )
+            //end_user_price = Original Price + Import Tax Price + VAT 
+            //(VAT = (Original Price + Import Tax Price) * 12% )
             return (car.OriginalPrice + CaculateImportTaxPrice(car)) * (1 + CountryVAT.Philippines);
         }
 
