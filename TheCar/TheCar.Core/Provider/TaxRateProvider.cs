@@ -8,7 +8,7 @@ using TheCar.Data.Enum;
 
 namespace TheCar.Core.Provider
 {
-    internal class TaxRateProvider : ITaxRateProvide
+    internal class TaxRateProvider
     {
         private static Dictionary<Region, List<TaxRate>> _dicTaxRate;
 

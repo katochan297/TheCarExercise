@@ -11,7 +11,7 @@ namespace TheCar.Core.Service
 {
     public class CarService
     {
-        private readonly ITaxRateProvide _taxProvider;
+        private readonly TaxRateProvider _taxProvider;
 
         public CarService()
         {

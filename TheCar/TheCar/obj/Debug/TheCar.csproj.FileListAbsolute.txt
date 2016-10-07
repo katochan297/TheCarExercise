@@ -8,3 +8,13 @@ C:\1 - Personal\TheCar\TheCar\bin\Debug\TheCar.Data.pdb
 C:\1 - Personal\TheCar\TheCar\obj\Debug\TheCar.csprojResolveAssemblyReference.cache
 C:\1 - Personal\TheCar\TheCar\obj\Debug\TheCar.exe
 C:\1 - Personal\TheCar\TheCar\obj\Debug\TheCar.pdb
+C:\Users\Kato\Desktop\TheCar - Kato\TheCarExercise\TheCar\TheCar\bin\Debug\TheCar.exe.config
+C:\Users\Kato\Desktop\TheCar - Kato\TheCarExercise\TheCar\TheCar\obj\Debug\TheCar.exe
+C:\Users\Kato\Desktop\TheCar - Kato\TheCarExercise\TheCar\TheCar\obj\Debug\TheCar.pdb
+C:\Users\Kato\Desktop\TheCar - Kato\TheCarExercise\TheCar\TheCar\bin\Debug\TheCar.exe
+C:\Users\Kato\Desktop\TheCar - Kato\TheCarExercise\TheCar\TheCar\bin\Debug\TheCar.pdb
+C:\Users\Kato\Desktop\TheCar - Kato\TheCarExercise\TheCar\TheCar\bin\Debug\TheCar.Core.dll
+C:\Users\Kato\Desktop\TheCar - Kato\TheCarExercise\TheCar\TheCar\bin\Debug\TheCar.Data.dll
+C:\Users\Kato\Desktop\TheCar - Kato\TheCarExercise\TheCar\TheCar\bin\Debug\TheCar.Core.pdb
+C:\Users\Kato\Desktop\TheCar - Kato\TheCarExercise\TheCar\TheCar\bin\Debug\TheCar.Data.pdb
+C:\Users\Kato\Desktop\TheCar - Kato\TheCarExercise\TheCar\TheCar\obj\Debug\TheCar.csprojResolveAssemblyReference.cache

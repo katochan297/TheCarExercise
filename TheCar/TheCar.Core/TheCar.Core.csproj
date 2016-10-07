@@ -42,7 +42,6 @@
   <ItemGroup>
     <Compile Include="Helper\Utilities.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Provider\ITaxRateProvider.cs" />
     <Compile Include="Provider\TaxRate.cs" />
     <Compile Include="Provider\TaxRateProvider.cs" />
     <Compile Include="Service\CarService.cs" />

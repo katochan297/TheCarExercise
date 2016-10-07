@@ -2,3 +2,7 @@ C:\1 - Personal\TheCar\TheCar.Data\bin\Debug\TheCar.Data.dll
 C:\1 - Personal\TheCar\TheCar.Data\bin\Debug\TheCar.Data.pdb
 C:\1 - Personal\TheCar\TheCar.Data\obj\Debug\TheCar.Data.dll
 C:\1 - Personal\TheCar\TheCar.Data\obj\Debug\TheCar.Data.pdb
+C:\Users\Kato\Desktop\TheCar - Kato\TheCarExercise\TheCar\TheCar.Data\bin\Debug\TheCar.Data.dll
+C:\Users\Kato\Desktop\TheCar - Kato\TheCarExercise\TheCar\TheCar.Data\bin\Debug\TheCar.Data.pdb
+C:\Users\Kato\Desktop\TheCar - Kato\TheCarExercise\TheCar\TheCar.Data\obj\Debug\TheCar.Data.dll
+C:\Users\Kato\Desktop\TheCar - Kato\TheCarExercise\TheCar\TheCar.Data\obj\Debug\TheCar.Data.pdb

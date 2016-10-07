@@ -13,7 +13,7 @@ namespace TheCar.Data.Enum
         Japan = 3,
         Other = 4
     }
-
+    
     public class CountryVAT
     {
         public static readonly float Philippines = (float)12 / 100;
